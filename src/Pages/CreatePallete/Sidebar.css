@@ -57,11 +57,6 @@
     background: var(--clr-btn-warning);
 }
 
-.chromepicker{
-    /* transform: scale(1.33); */
-    /* transform-origin: left top; */
-}
-
 .chromepicker input{
     padding: 1rem;
     font-weight: 800;

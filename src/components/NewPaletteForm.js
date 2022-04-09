@@ -11,7 +11,7 @@ const history = useHistory()
 
 const handleSubmit = (e) => { 
     e.preventDefault()   
-    console.log({paletteName: name, id: uuidv4(), emoji: '😃',  colors});
+    // console.log({paletteName: name, id: uuidv4(), emoji: '😃',  colors});
     savePalette({paletteName: name, id: uuidv4(), emoji: '😃',  colors});
     history.push('/')
 }

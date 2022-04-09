@@ -11,7 +11,7 @@ const Main = ({seeds, deletePalette}) => {
     return (
         <main>
             {/* search through color wiht filter (all, ...colors)*/}
-            <input className='search-filter' type="text" placeholder='Search anything to yoink'/>
+            {/* <input className='search-filter' type="text" placeholder='Search anything to yoink'/> */}
             <section>
                 <div className="container-grid-most">
                 {seeds &&  <CustomPalette seeds={seeds} deletePalette={deletePalette}/>}

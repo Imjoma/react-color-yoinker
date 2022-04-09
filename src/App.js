@@ -28,7 +28,7 @@ function App() {
   }, [palettes]);
 
   const savePalette = newPalette => {
-    setPalettes([...palettes, newPalette]);
+    setPalettes([newPalette, ...palettes]);
   };
 
   const deletePalette = id => {

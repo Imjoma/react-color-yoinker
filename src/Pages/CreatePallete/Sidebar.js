@@ -8,7 +8,7 @@ const Sidebar = ({handleAddColor, max, hidden, colors}) => {
     return (
       
       <div className="sidebar"
-        style={{ marginLeft: `${hidden ? "-430px" : "0"}`}}>
+        style={{ transform: `${hidden ? "translateX(-100%)" : "translateX(0)"}`}}>
         <div className='sidebar-content'>
           <div className="new-pallete-info">
             Make your<br></br>own
@@ -35,7 +35,6 @@ const Sidebar = ({handleAddColor, max, hidden, colors}) => {
                 >
                  Remove Color
               </div>
-          <div className='length'>{colors.length}</div>
         </div>
         </div>
     );
