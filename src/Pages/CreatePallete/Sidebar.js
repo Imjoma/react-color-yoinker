@@ -2,13 +2,13 @@ import {React, useState} from 'react';
 import { ChromePicker } from 'react-color';
 import './Sidebar.css';
 
-const Sidebar = ({handleAddColor, max, hidden, colors}) => {
+const Sidebar = ({handleAddColor, max, hidden}) => {
   const [color, setColor] = useState('#5C03AA')
 
     return (
       
       <div className="sidebar"
-        style={{ transform: `${hidden ? "translateX(-100%)" : "translateX(0)"}`}}>
+        style={{ marginLeft: `${hidden ? "-430px" : "0"}`}}>
         <div className='sidebar-content'>
           <div className="new-pallete-info">
             Make your<br></br>own

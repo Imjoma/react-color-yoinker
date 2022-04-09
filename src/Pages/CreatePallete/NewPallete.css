@@ -63,10 +63,9 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 100vw;
     height: calc(100vh - 4.3rem);
-    /* border: 2px solid red; */
 }
+
 
 .pallete-page_btn{
     display: flex;

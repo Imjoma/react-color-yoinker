@@ -55,7 +55,6 @@ const handleModal = (initial='visible') => {
       </div>
         <div className="pallete-page_nav">
             <Link className="btn-back_left" to="/">Back</Link>
-            {/* <input className='palette-name' type="text" value={name} placeholder='Palette Name' onChange={(e)=>setName(e.target.value)} /> */}
             <div className='pallete-page_btn'>
                 <div className="btn-icon dont-save"
                     onClick={()=>setHidden(!hidden)}
@@ -70,12 +69,7 @@ const handleModal = (initial='visible') => {
             </div>
         </div>
         <div className="palette-create-field">
-                {/* <div className="btn-icon"><i className="fas fa-edit "></i></div> */}
-            {/* <div className="edit-name">
-                <input className='palette-name' type="text" value={name} placeholder='Palette Name' onChange={(e)=>setName(e.target.value)} />
-            </div> */}
             <Sidebar 
-            
                 colors={colors}
                 hidden={hidden}
                 max={max}

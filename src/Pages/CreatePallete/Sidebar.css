@@ -67,7 +67,7 @@
 }
 
 /* TABLET || SMALL SCREEN */
-@media screen and (max-width: 1080px){
+/* @media screen and (max-width: 1080px){
     .sidebar{
         width: 40rem;
     }
@@ -83,4 +83,4 @@
     .sidebar{
         width: 60rem;
     }
-}
+} */
