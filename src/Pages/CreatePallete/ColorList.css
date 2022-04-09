@@ -1,0 +1,51 @@
+.color-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(40px, 1fr));
+    grid-template-rows: repeat(4, minmax(40px, 1fr));
+
+    transition: .3s;
+}
+
+
+.color-list > *{
+    padding: .6rem 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/* TABLET || SMALL SCREEN */
+@media screen and (max-width: 1080px){
+    .color-list{
+        grid-template-columns: repeat(4, minmax(40px, 1fr));
+        grid-template-rows: repeat(5, minmax(40px, 1fr));
+    }
+}
+
+@media screen and (max-width: 900px){
+    .color-list{
+        grid-template-columns: repeat(2, minmax(40px, 1fr));
+        grid-template-rows: repeat(10, minmax(40px, 1fr));
+    }
+    .color-list > *{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 560px){
+    .color-list{
+        grid-template-columns: repeat(1, minmax(40px, 1fr));
+        grid-template-rows: repeat(20, minmax(40px, 1fr));
+
+    }
+    }

@@ -1,0 +1,38 @@
+.footer{
+    width: 100vw;
+    height: 280px;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 6rem;
+
+    width: min(100%, 63.9rem);
+}
+
+.container-footer .footer-header{
+    font-weight: 600;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+h4 a{
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+img{
+    width: 15%;
+}

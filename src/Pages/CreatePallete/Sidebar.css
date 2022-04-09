@@ -1,0 +1,91 @@
+.sidebar{
+    position: relative;
+    width: 430px;
+    padding: 1rem;
+
+    background: var(--clr-light);
+    transition: .3s;
+    overflow: hidden;
+}
+
+.sidebar-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 1rem;
+    height: 100%;
+}
+
+.sidebar-content > *{
+    width: 100%;
+}
+
+.new-pallete-info{
+    color: black;
+    font-size: 1.8rem;
+    /* text-align: center; */
+}
+
+.new-pallete-info span{
+    font-weight: 800;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+}   
+
+.new-pallete-info div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 12rem;
+    height: 2rem;
+    /* transform: translateX(.4rem) translateY(.4rem); */
+    transform: rotate(30deg) translateX(2rem);
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.add,
+.remove{
+    padding: .7rem 1.4rem;
+    margin-inline: auto;
+    text-align: center;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.remove{
+    background: var(--clr-btn-warning);
+}
+
+.chromepicker{
+    /* transform: scale(1.33); */
+    /* transform-origin: left top; */
+}
+
+.chromepicker input{
+    padding: 1rem;
+    font-weight: 800;
+}
+
+.length{
+    color: black;
+}
+
+/* TABLET || SMALL SCREEN */
+@media screen and (max-width: 1080px){
+    .sidebar{
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sidebar{
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .sidebar{
+        width: 60rem;
+    }
+}
